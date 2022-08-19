@@ -1,0 +1,332 @@
+@media (max-width: 768px) {
+	.nav {
+		&-desktop {
+			display: none;
+		}
+	}
+
+	.header {
+		&__logo {
+			top: 0;
+		}
+
+		&__arrow {
+			bottom: 2em;
+		}
+
+		&__intencje {
+			font-size: 2em;
+		}
+	}
+
+	.header__text {
+		&.header__swiadectwa--text {
+			padding-top: 19rem;
+			font-size: 3em;
+		}
+	}
+
+	.header__swiadectwa {
+		&--p {
+			font-size: 2em;
+		}
+	}
+
+	.header__ratowanie {
+		padding-top: 10rem;
+		&--h2 {
+			font-size: 2em;
+			padding: 0.5em;
+		}
+		&--p {
+			font-size: 1.5em;
+			padding: 0.5em;
+		}
+	}
+
+	.header__text {
+		&.header__ratowanie--text {
+			padding: 10rem 0.5em 0.2em;
+			font-size: 3em;
+		}
+	}
+
+
+	.invitation {
+		&__box {
+			@include boxHeader;
+		}
+
+		&__text {
+			text-align: left;
+			max-width: 100%;
+		}
+
+		&__img {
+			@include imgHeader;
+		}
+	}
+
+	.faustyna {
+		&__container {
+			width: 300px;
+		}
+	}
+
+	.contactForm {
+		padding: 40px;
+	}
+
+	.container {
+		flex-direction: column;
+		&__contactHeader {
+			font-size: 1em;
+		}
+
+		&__contacttext {
+			font-size: 1em;
+		}
+
+		&__contactInfo {
+			margin-bottom: 2em;
+		}
+	}
+
+	.intencja {
+		height: 172vh;
+
+		&__img {
+			height: 55em;
+		}
+
+		&__header {
+			font-size: 2.5em;
+			padding-top: 4em;
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+
+		&__form-group {
+			margin-right: 15%;
+			margin-left: 15%;
+		}
+	}
+
+	.rozance {
+		&__img--item {
+			width: 70%;
+		}
+
+		&__border {
+			margin: 0 auto;
+			height: 25em;
+			width: 80vw;
+		}
+
+		&__p {
+			font-size: 1.5em;
+			padding: 1.5em;
+		}
+	}
+
+	.thankyou {
+		&__wrapper {
+			margin-top: 15em;
+			margin-bottom: 27em;
+		}
+
+		&__box {
+			width: 300px;
+			height: 300px;
+		}
+
+		&__text {
+			padding: 4em;
+		}
+	}
+
+	.error {
+		margin-top: 20em;
+		padding: 2em;
+		&__error-404 {
+			font-size: 3em;
+		}
+
+		&__error-404p {
+			font-size: 1.5em;
+		}
+	}
+
+	.contact {
+		width: 100%;
+		padding: 1em;
+		&__form {
+			margin-left: 3em;
+		}
+	}
+
+	//dieta
+	.aboutEwa {
+		padding-bottom: 1em;
+	}
+
+	.wrapperDiet {
+		margin: 0.5em;
+	}
+
+	.aboutDR {
+		&__text {
+			font-size: 2em;
+		}
+		&__img {
+			float: none;
+			&--fluid {
+				width: 300px;
+				border-radius: 5%;
+			}
+		}
+	}
+
+	.fenomen {
+		&__text {
+			font-size: 2em;
+			margin: 1em;
+			margin-left: 2em;
+		}
+	}
+
+	.FAQ {
+		&__quote {
+			font-size: 2em;
+		}
+
+		&__questions {
+			margin: 0.1em;
+		}
+
+		&__heading {
+			font-size: 2.5em;
+			margin: 1.5em 1em 1.5em 1em;
+			text-align: center;
+		}
+
+		&__imgOne {
+			max-width: 35em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-left: 1em;
+			margin: 1.5em;
+			margin-bottom: 2em;
+		}
+
+		&__list {
+			margin-left: 1em;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.header {
+		&__text {
+			padding-top: 9rem;
+			font-size: 3rem;
+		}
+	}
+
+	.desc {
+		font-size: 2em;
+	}
+
+	//ewa
+	.wrapperDiet {
+		margin: 1em;
+	}
+
+	.aboutDR {
+		&__img {
+			&--fluid {
+				width: 200px;
+				border-radius: 5%;
+			}
+		}
+	}
+
+	.invitation-title {
+		font-size: 3rem;
+	}
+
+	.invitation {
+		&__title {
+			font-size: 2.5rem;
+		}
+
+		&__text {
+			font-size: 2em;
+		}
+	}
+
+	.container {
+		margin-left: 0.1em;
+
+		&__icon {
+			justify-content: start;
+			font-size: 1.5em;
+		}
+		&__text {
+			justify-content: start;
+			font-size: 1.6em;
+		}
+	}
+
+	.header__ratowanie {
+		padding-top: 10rem;
+		&--h2 {
+			font-size: 1.8em;
+			padding: 0.5em;
+		}
+		&--p {
+			font-size: 1.5em;
+			padding: 0.5em;
+		}
+	}
+
+	.header__text {
+		&.header__ratowanie--text {
+			padding: 5rem 0.5em 0.2em;
+			font-size: 2em;
+		}
+	}
+
+	.rozance {
+		&__border {
+			margin: 0 auto;
+			height: 30em;
+			width: 80vw;
+		}
+
+		&__p {
+			font-size: 1.5em;
+			padding: 1.5em;
+		}
+	}
+
+	.faustyna {
+		&__container {
+			width: 200px;
+			height: 300%;
+		}
+	}
+
+	.contact {
+		&__form {
+			margin-left: 1em;
+		}
+	}
+
+	.FAQ {
+		&__imgOne {
+			max-width: 15em;
+		}
+	}
+}
