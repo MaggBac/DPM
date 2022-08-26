@@ -7,25 +7,24 @@
 
 	&__logo {
 		position: absolute;
-		font-size: 2rem;
+		font-size: 6rem;
 		font-weight: bold;
 		padding-left: 1.8rem;
-		padding-top: 1.8rem;
 		z-index: 10;
 		text-decoration: none;
-		color: rgb(98, 95, 95);
-		text-shadow: 1px 1px 2px black, 0 0 25px rgb(242, 242, 243),
-			0 0 5px rgb(251, 251, 251);
+		color: rgba(254, 253, 253, 0.86);
+	}
+
+	.fa-home {
+		color: rgba(255, 249, 249, 0.879);
 	}
 
 	&__text {
-		padding-top: 16rem;
+		padding-top: 14rem;
 		font-size: 3.5rem;
 		font-weight: 400;
 		text-transform: uppercase;
 		font-family: 'Aboreto', cursive;
-		// text-shadow: 1px 1px 2px rgb(222, 221, 221),
-		// 	0 0 25px rgba(242, 242, 243, 0.647), 0 0 5px rgba(251, 251, 251, 0.723);
 	}
 
 	&__intencje {
@@ -37,6 +36,8 @@
 		font-weight: 400;
 		text-transform: uppercase;
 		font-family: 'Aboreto', cursive;
+		text-shadow: 1px 1px 2px rgb(12, 12, 12), 0 0 25px rgba(68, 68, 69, 0.647),
+			0 0 5px rgba(35, 34, 34, 0.723);
 	}
 
 	&__text,
@@ -51,9 +52,8 @@
 	&__arrow {
 		display: block;
 		position: absolute;
-		bottom: 4em;
+		bottom: 3em;
 		left: 48%;
-		// padding: 2em;
 		transform: translateX(-50%);
 		border: 2px solid rgb(223, 221, 221);
 		border-radius: 50%;
@@ -93,15 +93,69 @@
 }
 
 @mixin text {
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-family: 'Aboreto', cursive;
 }
 
-@mixin quote{
+@mixin quote {
 	font-size: 2.5em;
 	text-align: center;
 	padding: 0.5em;
 	text-transform: uppercase;
+}
+
+@mixin wyjazdyImg {
+	height: 40vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@mixin textWyjazdy {
+	font-size: 2.5em;
+	text-align: justify;
+	padding-bottom: 0.5em;
+}
+
+@mixin after {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3em;
+	font-size: 3.8rem;
+	font-family: 'Aboreto', cursive;
+	text-transform: uppercase;
+}
+
+@mixin afterLast {
+	font-size: 2.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4em;
+	font-family: 'Aboreto', cursive;
+	text-align: center;
+	font-weight: bold;
+}
+
+@mixin imgSmaller {
+	position: relative;
+	margin: 3em 0;
+	height: 70vh;
+	width: 100%;
+	box-shadow: 0 0 5px 10px rgb(255, 255, 255);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5%;
+}
+
+@mixin main {
+	color: white;
+	text-shadow: 1px 1px 2px rgb(126, 123, 123), 0 0 25px rgba(62, 62, 63, 0.386),
+		0 0 5px rgba(140, 137, 137, 0.462);
 }

@@ -6,9 +6,11 @@
 
 		&-desktop {
 			display: flex;
-			width: 100%;
+			margin: 0 auto;
+			width: 90%;
 			align-items: center;
 			justify-content: end;
+			flex-wrap: wrap;
 			padding: 1rem;
 			gap: 0.5rem;
 		}
@@ -19,25 +21,17 @@
 	}
 
 	.header {
-		background-image: linear-gradient(
-			rgba(216, 212, 212, 0.464),
-			rgba(115, 113, 113, 0.233)
-		),url('');
-
 		&__text {
-			padding-top: 6rem;
-		}
-
-		&__logo {
-			color: rgb(79, 78, 78);
+			padding-top: 2em;
 		}
 	}
 
 	.header__intencja {
-		background-image:linear-gradient(
-			rgba(216, 212, 212, 0.464),
-			rgba(115, 113, 113, 0.233)
-		),url('/src/img/hands-lg.jpg');
+		background-image: linear-gradient(
+				rgba(216, 212, 212, 0.464),
+				rgba(115, 113, 113, 0.233)
+			),
+			url('/dist/img/hands-lg.jpg');
 	}
 
 	.header__swiadectwa {
@@ -45,20 +39,46 @@
 				rgba(216, 212, 212, 0.464),
 				rgba(115, 113, 113, 0.233)
 			),
-			url('/src/img/book-lg.jpg');
+			url('/dist/img/book-lg.jpg');
 	}
 
 	.header__ratowanie {
-		background-image:linear-gradient(
-			rgba(216, 212, 212, 0.464),
-			rgba(115, 113, 113, 0.233)
-		),url('/src/img/bokkCross-lg.jpg');
+		background-image: linear-gradient(
+				rgba(216, 212, 212, 0.464),
+				rgba(115, 113, 113, 0.233)
+			),
+			url('/dist/img/bokkCross-lg.jpg');
 		&--h2 {
 			padding-bottom: 1.5em;
 		}
 	}
 
+	.aktualnosci {
+		&__option {
+			&-info {
+				flex-direction: row;
+			}
+		}
+	}
+
+	.wczasy {
+		&__header {
+			margin-top: 4em;
+		}
+	}
+
+	.aboutEwa {
+		padding-top: 2em;
+	}
+
 	.rozance {
+		&__imgHeader {
+			background-image: linear-gradient(
+					rgba(216, 212, 212, 0.464),
+					rgba(115, 113, 113, 0.233)
+				),
+				url('/dist/img/bokkCross-lg.jpg');
+		}
 		&__border {
 			margin-top: 8em;
 			margin-bottom: 2em;
@@ -79,6 +99,10 @@
 		align-items: center;
 	}
 
+	.section-aboutme {
+		margin-top: 0.5em;
+	}
+
 	.contact {
 		margin-left: 6em;
 
@@ -88,163 +112,3 @@
 		}
 	}
 }
-
-// @media (min-width: 912px) and (max-width: 952px) {
-
-// 	.link{
-// 		font-size: 3.5rem;
-// 	}
-// 	.header {
-// 		&__logo {
-// 			top: 0;
-// 		}
-
-// 		&__text {
-// 			padding-top: 30rem;
-// 		}
-// 	}
-
-// 	.header__ratowanie {
-// 		&--h2 {
-// 			padding: 0.5em 1em 1.5em 1em;
-// 			font-size: 4em;
-// 		}
-// 	}
-
-// 	.rozance {
-// 		&__border {
-// 			height: 40em;
-// 			width: 70vw;
-// 			margin-top: 3em;
-// 		}
-
-// 		&__p {
-// 			font-size: 3em;
-// 			padding: 1.5em;
-// 		}
-// 	}
-
-// 	.header__text {
-// 		&.header__ratowanie--text {
-// 			padding-top: 22rem;
-// 			font-size: 7em;
-// 		}
-// 	}
-
-// 	.header__text {
-// 		&.header__swiadectwa--text {
-// 			padding-top: 25rem;
-// 			font-size: 7em;
-// 		}
-// 	}
-
-	
-// 	.header__swiadectwa {
-// 		&--p {
-// 			font-size: 4em;
-// 		}
-// 	}
-
-// 	.faustyna {
-// 		&__p {
-// 			font-size: 2.8em;
-// 		}
-// 	}
-
-// 	.header__intencja {
-// 		height: 60vh;
-// 	}
-
-// 	.intencja {
-// 		&__header {
-// 			padding-top: 6em;
-// 			padding-bottom: 3em;
-// 		}
-// 		&__text {
-// 			font-size: 3em;
-// 		}
-// 		&__form-group {
-// 			margin-right: 30%;
-// 			margin-left: 30%;
-// 		}
-// 		&__form-btn {
-// 			width: 30%;
-// 		}
-// 	}
-
-// 	.added {
-// 		&__intencja {
-// 			h3 {
-// 				font-size: 3em;
-// 			}
-// 		}
-// 	}
-
-// 	.container {
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 	}
-
-// 	.thankyou {
-// 		&__wrapper {
-// 			margin-top: 20em;
-// 			margin-bottom: 66em;
-// 		}
-
-// 		&__h2 {
-// 			font-size: 3.5em;
-// 		}
-
-// 		&__goBack {
-// 			font-size: 3em;
-// 		}
-// 	}
-
-// 	.error {
-// 		margin-top: 30em;
-// 		margin-bottom: 100em;
-// 		&__error-404 {
-// 			font-size: 4.5em;
-// 		}
-
-// 		&__error-404p {
-// 			font-size: 3em;
-// 		}
-// 	}
-// }
-
-// @media (width: 1024px) {
-// 	.link {
-// 		font-size: 1.5rem;
-// 	}
-
-// 	.header {
-// 		&__intencje {
-// 			margin-left: 23rem;
-// 		}
-// 	}
-
-// 	.header__intencja {
-// 		height: 85vh;
-// 	}
-
-// 	.header__ratowanie {
-// 		&--h2 {
-// 			padding-bottom: 0.5em;
-// 		}
-// 	}
-
-// 	.header__text {
-// 		&.header__ratowanie--text {
-// 			padding-top: 2rem;
-// 		}
-// 	}
-// }
-// @media (width: 1280px) {
-// 	.header {
-// 		&__intencje {
-// 			margin-left: 34rem;
-// 		}
-// 	}
-// }

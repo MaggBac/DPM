@@ -60,7 +60,7 @@ document.addEventListener('mouseover', (e) => {
 
 
 const quotes = [
-	'„O nic się nie martwcie, ale w każdej sprawie wasze prośby przedstawiajcie Bogu w modlitwie i błaganiu z dziękczynieniem.” Flp 4, 6', 'bye', 'lol', 'hello', 'world']
+	'„O nic się nie martwcie, ale w każdej sprawie wasze prośby przedstawiajcie Bogu w modlitwie i błaganiu z dziękczynieniem.” Flp 4, 6', '„Powiodę ślepych drogą, której nie znali, poprowadzę ich ścieżkami, o których nie wiedzieli. Ciemność zamienię w światłość przed nimi, a miejsca nierówne – w równinę.” Iz 42, 16', '„Wszystko, o co prosicie w modlitwie, stanie się wam, tylko wierzcie, że otrzymacie.” Mk 11, 24', '„A nadzieja nie zawodzi, bo miłość Boża rozlana jest w sercach naszych przez Ducha Świętego, który nam jest dany.” 5,5, List do Rzymian', '„I choćbym rozdał na żywność dla ubogich cały swój majątek, i choćbym wydał swoje ciało na spalenie, a miłości bym nie miał, nic nie zyskam.”I Koryntian 13:3']
 
 function randomQuotes() {
 	let idx = Math.floor(Math.random() * quotes.length)
@@ -68,7 +68,3 @@ function randomQuotes() {
 }
 
 randomQuotes()
-
-
-//intencja
-

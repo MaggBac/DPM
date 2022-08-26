@@ -6,22 +6,19 @@
 	}
 
 	.header {
-		&__logo {
-			top: 0;
+		&__text{
+			padding-top: 7rem;
 		}
-
-		&__arrow {
-			bottom: 2em;
-		}
-
 		&__intencje {
 			font-size: 2em;
+		}
+		&__logo {
+			position: relative;
 		}
 	}
 
 	.header__text {
 		&.header__swiadectwa--text {
-			padding-top: 19rem;
 			font-size: 3em;
 		}
 	}
@@ -51,7 +48,6 @@
 		}
 	}
 
-
 	.invitation {
 		&__box {
 			@include boxHeader;
@@ -67,9 +63,176 @@
 		}
 	}
 
+	//aktualnosci
+
+	.aktualnosci {
+		&__option {
+			display: inline-block;
+
+			&-heading {
+				font-size: 2em;
+			}
+			&-img {
+				width: 100%;
+				object-fit: cover;
+				height: auto;
+			}
+			&-info {
+				justify-content: space-between;
+			}
+			&-text {
+				text-align: center;
+				margin-bottom: 0.1em;
+			}
+			&-imgText {
+				width: 90%;
+			}
+		}
+	}
+
+	//wyjazdy
+
+	.wczasy {
+		&__header {
+			background-image: linear-gradient(
+					rgba(216, 212, 212, 0.464),
+					rgba(115, 113, 113, 0.233)
+				),
+				url('/dist/img/poczecie-sm.jpg');
+			margin-top: 6em;
+		}
+		&__h3 {
+			font-size: 2.1em;
+			text-align: center;
+		}
+		&__h4 {
+			top: 30%;
+			font-size: 1.3em;
+		}
+		&__text {
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+
+	.milosc {
+		&__img {
+			background-image: linear-gradient(
+					rgba(123, 122, 122, 0.277),
+					rgba(154, 153, 153, 0.358)
+				),
+				url('/dist/img/handsGroup-sm.jpg');
+		}
+		&__header {
+			font-size: 2.1em;
+		}
+		&__text {
+			font-size: 2em;
+			text-align: center;
+		}
+		&__link {
+			font-size: 2em;
+		}
+		&__invite {
+			text-align: center;
+			font-size: 2em;
+		}
+	}
+
+	.serca {
+		&__img {
+			background-image: linear-gradient(
+					rgba(123, 122, 122, 0.277),
+					rgba(154, 153, 153, 0.358)
+				),
+				url('/dist/img/sunset-sm.jpg');
+			&::after {
+				font-size: 3em;
+			}
+		}
+		&__header {
+			font-size: 2.1em;
+		}
+		&__text {
+			font-size: 2em;
+			text-align: center;
+		}
+		&__card {
+			h3 {
+				font-size: 2.1em;
+			}
+
+			ul {
+				width: 100%;
+			}
+		}
+	}
+
+	.women {
+		&__header {
+			font-size: 3em;
+		}
+
+		&__bottom {
+			&::after {
+				font-size: 2.1em;
+				margin: 1em;
+			}
+		}
+	}
+
+	.men {
+		&::after {
+			font-size: 2.1em;
+			margin-top: 2.5em;
+		}
+	}
+
+	.ksiadz {
+		&__img {
+			background-image: linear-gradient(
+					rgba(154, 153, 153, 0.241),
+					rgba(228, 228, 228, 0.537)
+				),
+				url('/dist/img/olives-sm.jpg');
+			&::after {
+				font-size: 1.8em;
+				// padding-top: 6em;
+			}
+		}
+		&__text {
+			text-align: center;
+			font-size: 2em;
+			// margin: 1em;
+		}
+	}
+
+	.sylwester {
+		&__img {
+			background-image: linear-gradient(
+					rgba(154, 153, 153, 0.73),
+					rgba(228, 228, 228, 0.104)
+				),
+				url('/dist/img/fireworks-sm.jpg');
+			&::after {
+				font-size: 2.1em;
+				// padding-top: 6em;
+			}
+		}
+
+		&__text {
+			font-size: 2em;
+			text-align: left;
+		}
+	}
+
 	.faustyna {
 		&__container {
 			width: 300px;
+		}
+
+		&__p {
+			text-align: left;
 		}
 	}
 
@@ -92,16 +255,20 @@
 		}
 	}
 
+	.header__intencja {
+		height: 95vh;
+	}
+
 	.intencja {
 		height: 172vh;
 
 		&__img {
-			height: 55em;
+			height: 60em;
 		}
 
 		&__header {
 			font-size: 2.5em;
-			padding-top: 4em;
+			padding-top: 2em;
 			margin-left: 1em;
 			margin-right: 1em;
 		}
@@ -113,6 +280,10 @@
 	}
 
 	.rozance {
+		&__imgHeader {
+			height: 50vh;
+			margin-top: 5em;
+		}
 		&__img--item {
 			width: 70%;
 		}
@@ -157,6 +328,20 @@
 		}
 	}
 
+	.swiadectwa {
+		&__img {
+			background-image: linear-gradient(
+					rgba(123, 122, 122, 0.277),
+					rgba(154, 153, 153, 0.358)
+				),
+				url('/dist/img/book-sm.jpg');
+		}
+		&__text {
+			text-align: left;
+			font-size: 2em;
+		}
+	}
+
 	.contact {
 		width: 100%;
 		padding: 1em;
@@ -164,9 +349,13 @@
 			margin-left: 3em;
 		}
 	}
+	.section-aboutme {
+		margin-top: 1em;
+	}
 
 	//dieta
 	.aboutEwa {
+		padding-top: 2em;
 		padding-bottom: 1em;
 	}
 
@@ -177,8 +366,12 @@
 	.aboutDR {
 		&__text {
 			font-size: 2em;
+			text-align: left;
 		}
 		&__img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			float: none;
 			&--fluid {
 				width: 300px;
@@ -192,6 +385,7 @@
 			font-size: 2em;
 			margin: 1em;
 			margin-left: 2em;
+			text-align: left;
 		}
 	}
 
@@ -208,6 +402,10 @@
 			font-size: 2.5em;
 			margin: 1.5em 1em 1.5em 1em;
 			text-align: center;
+		}
+
+		&__text {
+			text-align: left;
 		}
 
 		&__imgOne {
@@ -232,9 +430,34 @@
 			padding-top: 9rem;
 			font-size: 3rem;
 		}
+		&__logo {
+			font-size: 5rem;
+		}
 	}
 
 	.desc {
+		font-size: 2em;
+	}
+
+	//aktualnosci
+
+	.aktualnosci {
+		&__header {
+			font-size: 2em;
+		}
+	}
+
+	.custom-btn {
+		width: 40%;
+	}
+	.svg-wrapper {
+		width: 12em;
+	}
+	.shape {
+		display: none;
+	}
+
+	.text {
 		font-size: 2em;
 	}
 
@@ -249,6 +472,15 @@
 				width: 200px;
 				border-radius: 5%;
 			}
+		}
+	}
+
+	.FAQ {
+		&__heading {
+			font-size: 2em;
+		}
+		&__text {
+			text-align: left;
 		}
 	}
 
@@ -298,6 +530,16 @@
 		}
 	}
 
+	.serca {
+		&__card {
+			h3 {
+				font-size: 1.5em;
+			}
+			ul {
+				font-size: 1em;
+			}
+		}
+	}
 	.rozance {
 		&__border {
 			margin: 0 auto;
@@ -318,15 +560,63 @@
 		}
 	}
 
+	.women {
+		&__bottom {
+			&::after {
+				padding-top: 1em;
+			}
+		}
+	}
+
+	.men {
+		&::after {
+			padding-top: 1em;
+		}
+	}
+
+	.ksiadz {
+		&__img {
+			&::after {
+				font-size: 1.4em;
+				padding-top: 1em;
+			}
+		}
+	}
+
+	.sylwester {
+		&__img {
+			&::after {
+				padding-top: 1em;
+			}
+		}
+	}
+
 	.contact {
 		&__form {
 			margin-left: 1em;
 		}
 	}
 
+	.sectionTop-wrapper {
+		margin: 1em auto;
+		width: 100%;
+	}
+
+	.sectionTop {
+		&__text {
+			font-size: 1.6em;
+		}
+	}
+
 	.FAQ {
 		&__imgOne {
 			max-width: 15em;
+		}
+	}
+
+	.swiadectwa {
+		&__header {
+			font-size: 2em;
 		}
 	}
 }
