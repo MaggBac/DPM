@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoracja</title>
+    <script src="https://kit.fontawesome.com/190892c2b3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Source+Sans+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="/dist/css/hamburger.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+
+</head>
+
+<body>
+    <!-- @include 'logo.kit' -->
+
+    <main>
+        <section class="sakrament" id="spotkanie">
+            <div class="sakrament__wrapper">
+
+                <h2 class="sakrament__header" data-aos="fade-right" data-aos-duration="2500"
+                    >
+                    Indywidualne spotkanie z Jezusem Eucharystycznym.</h2>
+
+                <p class="sakrament__text" style="text-align: center;" data-aos="zoom-in" data-aos-duration="2500">Mt 11, 28 “Przyjdźcie do Mnie
+                    wszyscy, którzy
+                    utrudzeni i obciążeni jesteście, a Ja was pokrzepię” </p>
+                <p class="sakrament__text" style="text-align: left;">Znajdź ukojenie w ramionach Stwórcy, pociesz Go
+                    kochającym sercem, daj Mu w nim odpocząć, przynieś Mu swoje radości i utrapienia. Wejdź z Bogiem w
+                    dialog. Porozmawiaj z Nim jak ze stęsknionym przyjacielem. On otrze Twe łzy, opatrzy Twoje rany,
+                    każdy smutek zamieni w pocałunek nieba, da światło, wskazówkę, rozwiązanie, pokój, jakiego świat nie
+                    jest w stanie dać ani zabrać. Przed Nim nic nie jest ukryte, On zna Cię lepiej niż Ty sam. Zaufaj..
+                    On na Ciebie czeka…
+                </p>
+                <hr>
+                <hr>
+                <div id="sakrament__adoracja"></div>
+
+                <p class="sakrament__text" style="text-align: left;" data-aos="fade-right" data-aos-duration="2500">
+                    Wolne godziny na indywidualną adorację: </p>
+                <form class='sakrament__form' id="reservationForm">
+                    <label for="date">Wybierz datę:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="hour">Wybierz godzinę:</label>
+                    <select id="hour" name="hour" required>
+                        <option value="">Wybierz</option>
+                        <option value="6">6:00</option>
+                        <option value="7">7:00</option>
+                        <option value="8">8:00</option>
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                    </select>
+                    <br>
+                    <label for="name">Twoje Imię:</label>
+                    <input type="text" id="input" name="name" required>
+                    <br>
+                    <button class="sakrament__button" id="post">Zapisz się <i class="far fa-heart"></i></button>
+                </form>
+
+                <div class="sakrament__container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Pt_R9U2ILYE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div id="adoracja">
+                <h2 class="sakrament__header" data-aos="zoom-in-up" data-aos-duration="2500">
+                    Comiesięczna Adoracja</h2>
+                <p class="sakrament__quote">“Jeśli ktoś jest spragniony, a wierzy we Mnie - niech przyjdzie do Mnie i
+                    pije!
+                    Jak rzekło Pismo: Strumienie wody żywej popłyną z jego wnętrza. A powiedział to o Duchu, którego
+                    mieli
+                    otrzymać wierzący w Niego; Duch bowiem jeszcze nie był dany, ponieważ Jezus nie został jeszcze
+                    uwielbiony” J 7, 37-39
+                </p>
+                <div class="sakrament__img"></div>
+                <div class="sakrament__wrapper">
+                    <p class="sakrament__headerTwo">W Domu Pięknej Miłości <span data-aos="zoom-out-up"
+                            data-aos-duration="2500">znajduje się kaplica Matki Bożej Fatimskiej </span><span
+                            data-aos="zoom-out-up" data-aos-duration="2500"> oraz
+                            kaplica Adoracji Najświętszego Sakramentu.</span></p>
+                  
+                    <h3 class="sakrament__text" data-aos="fade-right" data-aos-duration="2500"
+                        style="font-weight: bold;">
+                        MSZA ŚWIĘTA Z UWIELBIENIEM
+                        BOGA W NAJŚWIĘTSZYM SAKRAMENCIE “WODA ŻYCIA”</h3>
+                    <div id="sakrament__add" class="sakrament__add" style="display: inline;">
+
+                    </div>
+                    <p class="sakrament__text" style="text-align: left;" data-aos="fade-right" data-aos-duration="2500">
+                        Terminy:</p>
+                    <div id="sakrament__terms">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+
+    <!-- @include 'footer.kit' -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="/dist/js/main.min.js"></script>
+    <script>
+        var input = document.getElementById('date');
+
+        function isWeekend(date) {
+            var day = date.getDay();
+            return day === 0 || day === 6;
+        }
+
+        function handleDateChange() {
+            var selectedDate = new Date(input.value);
+            if (!isWeekend(selectedDate)) {
+                alert('Prosimy wybrać weekend od soboty 6:00 do niedzieli 21:00.');
+                input.value = '';
+            }
+        }
+
+        input.addEventListener('change', handleDateChange);
+
+        document.addEventListener('DOMContentLoaded', async function () {
+            async function fetchEnvVariables() {
+                try {
+                    const response = await fetch('http://localhost:3000/env');
+                    const envVariables = await response.json();
+                    return envVariables;
+                } catch (error) {
+                    console.error('Error fetching environment variables:', error);
+                    return {};
+                }
+            }
+
+            let getBtn, postBtn, baseUrl;
+
+            async function usage() {
+                const envVariables = await fetchEnvVariables();
+
+                getBtn = document.getElementById('get');
+                postBtn = document.getElementById('post');
+                baseUrl = envVariables.PORT;
+
+                document.getElementById("reservationForm").addEventListener("submit", validateAndPostInfo);
+
+                function validateAndPostInfo(e) {
+                    const formData = new FormData(event.target);
+                    const hour = formData.get("hour");
+                    const date = formData.get("date");
+                    const name = formData.get("name");
+                    e.preventDefault();
+
+                    if (!name || !hour || !date) {
+                        alert("Proszę wypełnić wszystkie pola.");
+                        return;
+                    }
+                    postInfo(event, baseUrl, name, hour, date)
+                };
+
+                document.getElementById("date").addEventListener("change", async function () {
+                    const selectedDate = document.getElementById("date").value;
+                    if (selectedDate) {
+                        const bookedHours = await getBookedHours(baseUrl, selectedDate);
+                        disableBookedHours(bookedHours);
+                    }
+                });
+            }
+
+            async function getBookedHours(baseUrl, selectedDate) {
+                try {
+                    const usersUrl = `${baseUrl}?date=${selectedDate}`;
+                    const res = await fetch(usersUrl);
+                    const users = await res.json();
+                    return users.map(user => user.hour);
+                } catch (error) {
+                    console.error('Error fetching booked hours:', error);
+                    return [];
+                }
+            }
+
+            function disableBookedHours(bookedHours) {
+                const hourSelect = document.getElementById("hour");
+                for (let i = 0; i < hourSelect.options.length; i++) {
+                    const optionValue = hourSelect.options[i].value;
+                    if (bookedHours.includes(optionValue)) {
+                        hourSelect.options[i].disabled = true;
+                    } else {
+                        hourSelect.options[i].style.color = 'green';
+                    }
+                }
+            }
+
+          
+            async function postInfo(event, baseUrl, name, hour, date) {
+                event.preventDefault();
+                try {
+                    const usersUrl = `${baseUrl}`;
+                    const res = await fetch(usersUrl, {
+                        method: 'POST',
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ 'name': name, 'hour': hour, 'date': date })
+                    });
+                    alert(`Zarezerwowano godzinę ${hour}:00 na dzień ${date} dla ${name}.`);
+                } catch (error) {
+                    console.error('Błąd podczas zapisu:', error);
+                }
+            }
+
+            usage();
+        });
+    </script>
+    <script type="text/javascript">
+        fetch('adoracja.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            let mainContainer = document.getElementById("sakrament__add");
+            let terms = document.getElementById("sakrament__terms")
+            let adoracja = document.getElementById("sakrament__adoracja")
+            for (let i = 0; i < data.length; i++) {
+                let pMain = document.createElement("p");
+                pMain.classList.add("sakrament__text");
+                pMain.innerHTML = data[i].text;
+                mainContainer.append(pMain);
+                let pText = document.createElement("p");
+                pText.classList.add("sakrament__text");
+                pText.innerHTML = data[i].terminy
+                terms.append(pText);
+                let pAdor = document.createElement("p");
+                pAdor.classList.add("sakrament__text");
+                pAdor.innerHTML = data[i].indywidualna_adoracja
+                adoracja.append(pAdor);
+            }
+        }
+    </script>
+</body>
+
+</html>
