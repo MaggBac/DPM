@@ -23,7 +23,28 @@
 <body>
     <!-- @include 'logo.kit' -->
     <header style="margin-top: 6em;" class="header__intencja">
+        <!-- <div class="intencja">
+            <div class="intencja__img">
+                <h1 class="intencja__header">Prześlij intencję z prośbą o modlitwę</h1>
+                <div class="containerIntencja">
+                    <form class="intencja__form" id="form" onsubmit="return submitFunc()"
+                        action="https://formsubmit.co/5eb3ecd310533853068607c401bb0cfd" method="POST">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_subject" value="E-mail ze strony Domu Pięknej Miłości - INTENCJE">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://dompieknejmilosci.pl/thankyouIntention.html">
+                        <input class="intencja__form-group" id="Imię" type="text" name="Imię" placeholder="Twoje Imie">
+                        <input class="intencja__form-group" type="email" name="Email" id="email" placeholder="Email"
+                            required
+                            oninvalid="this.setCustomValidity('Proszę wypełnij to polę. Email jest wymagany.')">
+                        <textarea class="intencja__form-group intencja__form-groupText" id="intention" type="text"
+                            name="Wiadomość" maxlength="500" placeholder="Intencja" required></textarea>
+                        <button class="intencja__form-btn" id="btn" type="submit">Wyślij</button>
 
+                    </form>
+                </div>
+            </div>
+        </div> -->
         <div class="intencja">
             <div class="intencja__img">
                 <h1 class="intencja__header">Prześlij intencję z prośbą o modlitwę</h1>
@@ -58,7 +79,35 @@
     <script>
         AOS.init();
     </script>
+    <!-- <script type="text/javascript">
+        const intention = document.getElementById("intention");
+        const name = document.getElementById("name");
+        const btnInsert = document.getElementById("btn");
+        const lsOutput = document.getElementById("taskBoard");
 
+        btnInsert.onclick = function () {
+            const key = intention.value;
+            const value = name.value;
+
+            if (key && value) {
+                sessionStorage.setItem(key, value);
+                location.reload();
+            }
+        }
+
+        for (let i = 0; i < sessionStorage.length; i++) {
+            let childcount = document.getElementById("taskBoard").querySelectorAll('h2').length;
+            if (childcount >= 10) {
+                let select = document.getElementById('taskBoard');
+                select.lastChild.innerHTML = ''
+            } else {
+                const key = sessionStorage.key(i);
+                const value = sessionStorage.getItem(key);
+                lsOutput.innerHTML = `<h2 data-aos="zoom-in-up" data-aos-duration="2500">${key} ~ ${value}</h2>` + lsOutput.innerHTML;
+            }
+        }
+
+    </script> -->
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', async function () {
             async function fetchVariables() {
@@ -151,6 +200,34 @@
         });
 
     </script>
+
+
+
+    <!-- <script type="text/javascript">
+        fetch('intencje.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            let mainContainer = document.getElementById("taskBoard");
+
+            for (let i = 0; i < data.length; i++) {
+                let h2Main = document.createElement("h2");
+                h2Main.setAttribute("data-aos", "zoom-in-up")
+                h2Main.setAttribute("data-aos-duration", "2500")
+                h2Main.innerHTML = data[i].intencja + ' ~ ' + data[i].imie
+
+                mainContainer.prepend(h2Main);
+            }
+        }
+    </script> -->
     <script src="/dist/js/main.min.js"></script>
 
 </body>

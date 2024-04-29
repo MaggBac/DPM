@@ -27,11 +27,11 @@
         <section class="sakrament" id="spotkanie">
             <div class="sakrament__wrapper">
 
-                <h2 class="sakrament__header" data-aos="fade-right" data-aos-duration="2500"
-                    >
+                <h2 class="sakrament__header" data-aos="fade-right" data-aos-duration="2500">
                     Indywidualne spotkanie z Jezusem Eucharystycznym.</h2>
 
-                <p class="sakrament__text" style="text-align: center;" data-aos="zoom-in" data-aos-duration="2500">Mt 11, 28 “Przyjdźcie do Mnie
+                <p class="sakrament__text" style="text-align: center;" data-aos="zoom-in" data-aos-duration="2500">Mt
+                    11, 28 “Przyjdźcie do Mnie
                     wszyscy, którzy
                     utrudzeni i obciążeni jesteście, a Ja was pokrzepię” </p>
                 <p class="sakrament__text" style="text-align: left;">Znajdź ukojenie w ramionach Stwórcy, pociesz Go
@@ -45,8 +45,12 @@
                 <hr>
                 <div id="sakrament__adoracja"></div>
 
+                <!-- <p class="sakrament__text" style="text-align: left;" data-aos="fade-right" data-aos-duration="2500">
+                    Wolne godziny na indywidualną adorację:  <a
+                    href="https://docs.google.com/spreadsheets/d/1puVsUnoX3HOGbvaOv3423UeuB_q-mCnCKVDHht-v4-s/edit#gid=1394896645"
+                    target="_blank" class="sakrament__link"> <i class="far fa-heart"></i> (Kliknij tu)</a></p></p> -->
                 <p class="sakrament__text" style="text-align: left;" data-aos="fade-right" data-aos-duration="2500">
-                    Wolne godziny na indywidualną adorację: </p>
+                    Wolne godziny na indywidualną adorację:</p>
                 <form class='sakrament__form' id="reservationForm">
                     <label for="date">Wybierz datę:</label>
                     <input type="date" id="date" name="date" required>
@@ -71,7 +75,7 @@
                     </select>
                     <br>
                     <label for="name">Twoje Imię:</label>
-                    <input type="text" id="input" name="name" required>
+                    <input type="text" id="name" name="name" required>
                     <br>
                     <button class="sakrament__button" id="post">Zapisz się <i class="far fa-heart"></i></button>
                 </form>
@@ -100,7 +104,7 @@
                             data-aos-duration="2500">znajduje się kaplica Matki Bożej Fatimskiej </span><span
                             data-aos="zoom-out-up" data-aos-duration="2500"> oraz
                             kaplica Adoracji Najświętszego Sakramentu.</span></p>
-                  
+
                     <h3 class="sakrament__text" data-aos="fade-right" data-aos-duration="2500"
                         style="font-weight: bold;">
                         MSZA ŚWIĘTA Z UWIELBIENIEM
@@ -133,6 +137,39 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="/dist/js/main.min.js"></script>
+
+    <script type="text/javascript">
+        fetch('adoracja.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            let mainContainer = document.getElementById("sakrament__add");
+            let terms = document.getElementById("sakrament__terms")
+            let adoracja = document.getElementById("sakrament__adoracja")
+            for (let i = 0; i < data.length; i++) {
+                let pMain = document.createElement("p");
+                pMain.classList.add("sakrament__text");
+                pMain.innerHTML = data[i].text;
+                mainContainer.append(pMain);
+                let pText = document.createElement("p");
+                pText.classList.add("sakrament__text");
+                pText.innerHTML = data[i].terminy
+                terms.append(pText);
+                let pAdor = document.createElement("p");
+                pAdor.classList.add("sakrament__text");
+                pAdor.innerHTML = data[i].indywidualna_adoracja
+                adoracja.append(pAdor);
+            }
+        }
+    </script>
     <script>
         var input = document.getElementById('date');
 
@@ -214,14 +251,14 @@
                 for (let i = 0; i < hourSelect.options.length; i++) {
                     const optionValue = hourSelect.options[i].value;
                     if (bookedHours.includes(optionValue)) {
-                        hourSelect.options[i].disabled = true;
+                        hourSelect.options[i].disabled = true; hourSelect.options[i].style.color = 'red';
                     } else {
                         hourSelect.options[i].style.color = 'green';
                     }
                 }
             }
 
-          
+
             async function postInfo(event, baseUrl, name, hour, date) {
                 event.preventDefault();
                 try {
@@ -239,38 +276,6 @@
 
             usage();
         });
-    </script>
-    <script type="text/javascript">
-        fetch('adoracja.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-
-        function appendData(data) {
-            let mainContainer = document.getElementById("sakrament__add");
-            let terms = document.getElementById("sakrament__terms")
-            let adoracja = document.getElementById("sakrament__adoracja")
-            for (let i = 0; i < data.length; i++) {
-                let pMain = document.createElement("p");
-                pMain.classList.add("sakrament__text");
-                pMain.innerHTML = data[i].text;
-                mainContainer.append(pMain);
-                let pText = document.createElement("p");
-                pText.classList.add("sakrament__text");
-                pText.innerHTML = data[i].terminy
-                terms.append(pText);
-                let pAdor = document.createElement("p");
-                pAdor.classList.add("sakrament__text");
-                pAdor.innerHTML = data[i].indywidualna_adoracja
-                adoracja.append(pAdor);
-            }
-        }
     </script>
 </body>
 

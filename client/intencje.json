@@ -1,0 +1,32 @@
+[
+	{
+        "id":"1",
+		"intencja": "Proszę o modlitwę w intencji mojego rozeznania dobra i zła. Bóg zapłać",
+		"imie": "Marta"
+	},
+	{
+        "id":"2",
+		"intencja": "Proszę o modlitwę w intencji znalezienia dobrej pracy oraz o naprawienie relacji z najbliższymi.",
+		"imie": "Edyta"
+	},
+	{
+        "id":"3",
+		"intencja": "O przemianę serc Marty i Piotra i o uratowanie ich małżeństwa.",
+		"imie": "Jola"
+	},
+	{
+        "id":"4",
+		"intencja": "O opiekę i prowadzenie Przenajświętszej Maryi Panny oraz łaskę rozeznania powołania dla Dominika i Karola.",
+		"imie": "Wioletta"
+	},
+	{
+        "id":"5",
+		"intencja": "W intencji ukochanego, który mnie bardzo skrzywdził, aby to zrozumiał. Proszę o szansę na przemianę relacji między nami.",
+		"imie": "Krystyna"
+	},
+	{
+        "id":"6",
+		"intencja": "Panie Boże proszę żeby Piotr w dniu 22 marca miał przyznaną rentę z ZUS na komisji lekarskiej w ZUS żeby lekarz przyznał rentę Piotrowi na dłuższy czas na komisji lekarskiej w ZUS żeby lekarz był miły dla Piotra",
+		"imie": "Piotr"
+	}
+]
